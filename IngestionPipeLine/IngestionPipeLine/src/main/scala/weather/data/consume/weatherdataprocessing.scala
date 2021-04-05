@@ -1,18 +1,15 @@
 package weather.data.consume
 
-import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
 import org.apache.spark.sql.functions.{col, from_json, from_unixtime}
 import org.apache.spark.sql.streaming.StreamingQuery
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
-import java.util.Properties
-import scala.io.Source.fromURL
-
 class weatherdataprocessing {
 
   //Define schema for streaming kafka json data using spark
   val jsonSchema: StructType = new StructType()
+    .add("city", StringType)
     .add("lat", DoubleType)
     .add("lon",DoubleType)
     .add("timezone", StringType)

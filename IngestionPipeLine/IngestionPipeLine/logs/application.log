@@ -1,0 +1,1392 @@
+20210404 090934 [INFO ] [main] weatherapidata$ - Read and initialize all properties
+20210404 090934 [INFO ] [main] weatherapidata$ - Variable Name:logger - value:org.apache.logging.slf4j.Log4jLogger@1e683a3e
+20210404 090934 [INFO ] [main] weatherapidata$ - Variable Name:URL - value:https://api.openweathermap.org/data/2.5/onecall
+20210404 090934 [INFO ] [main] weatherapidata$ - Variable Name:exclude - value:minutely,hourly,daily,alerts
+20210404 090934 [INFO ] [main] weatherapidata$ - Variable Name:appid - value:7f9e75dbfba0b07fe2e4e79fc4457342
+20210404 090934 [INFO ] [main] weatherapidata$ - Variable Name:unit - value:metrics
+20210404 090934 [INFO ] [main] weatherapidata$ - Variable Name:dataList - value:List(lat, lon, timezone, dt, sunrise, sunset, temp, humidity, dew_point, visibility, wind_speed)
+20210404 090934 [INFO ] [main] weatherapidata$ - Variable Name:timeMS - value:60000
+20210404 090934 [INFO ] [main] weatherapidata$ - Variable Name:server - value:localhost
+20210404 090934 [INFO ] [main] weatherapidata$ - Variable Name:port - value:9092
+20210404 090934 [INFO ] [main] weatherapidata$ - Variable Name:zookeeperPort - value:2181
+20210404 090934 [INFO ] [main] weatherapidata$ - Variable Name:topicName - value:WeatherData
+20210404 090934 [INFO ] [main] weatherapidata$ - Variable Name:Flag - value:true
+20210404 090934 [INFO ] [main] weatherapidata$ - Variable Name:CityListSource - value:<iterator>
+20210404 090934 [INFO ] [main] weatherdataproducer -  Initialize weatherdataproducer
+20210404 090934 [INFO ] [main] weatherapidata$ - City:Delhi - API Polling started
+20210404 090934 [INFO ] [main] weatherapidata$ - APIurl - https://api.openweathermap.org/data/2.5/onecall?lat=28.66&lon=77.23&exclude=minutely,hourly,daily,alerts&appid=7f9e75dbfba0b07fe2e4e79fc4457342&units=metrics
+20210404 090934 [INFO ] [main] weatherdataproducer -  Pull Api data and add to kafka topic
+20210404 090934 [INFO ] [main] ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+20210404 090934 [INFO ] [main] AppInfoParser - Kafka version: 2.4.1
+20210404 090934 [INFO ] [main] AppInfoParser - Kafka commitId: c57222ae8cd7866b
+20210404 090934 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1617507574818
+20210404 090935 [INFO ] [kafka-producer-network-thread | producer-1] Metadata - [Producer clientId=producer-1] Cluster ID: aymTMDi4RQGLSJUKlHhwzg
+20210404 090935 [INFO ] [main] KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+20210404 090935 [INFO ] [main] weatherapidata$ - City:Delhi - API Polling completed
+20210404 090935 [INFO ] [main] weatherapidata$ - City:Mumbai - API Polling started
+20210404 090935 [INFO ] [main] weatherapidata$ - APIurl - https://api.openweathermap.org/data/2.5/onecall?lat=18.9667&lon=72.8333&exclude=minutely,hourly,daily,alerts&appid=7f9e75dbfba0b07fe2e4e79fc4457342&units=metrics
+20210404 090935 [INFO ] [main] weatherdataproducer -  Pull Api data and add to kafka topic
+20210404 090935 [INFO ] [main] ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+20210404 090935 [INFO ] [main] AppInfoParser - Kafka version: 2.4.1
+20210404 090935 [INFO ] [main] AppInfoParser - Kafka commitId: c57222ae8cd7866b
+20210404 090935 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1617507575354
+20210404 090935 [INFO ] [kafka-producer-network-thread | producer-2] Metadata - [Producer clientId=producer-2] Cluster ID: aymTMDi4RQGLSJUKlHhwzg
+20210404 090935 [INFO ] [main] KafkaProducer - [Producer clientId=producer-2] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+20210404 090935 [INFO ] [main] weatherapidata$ - City:Mumbai - API Polling completed
+20210404 090935 [INFO ] [main] weatherapidata$ - City:Kolkata - API Polling started
+20210404 090935 [INFO ] [main] weatherapidata$ - APIurl - https://api.openweathermap.org/data/2.5/onecall?lat=22.5411&lon=88.3378&exclude=minutely,hourly,daily,alerts&appid=7f9e75dbfba0b07fe2e4e79fc4457342&units=metrics
+20210404 090935 [INFO ] [main] weatherdataproducer -  Pull Api data and add to kafka topic
+20210404 090935 [INFO ] [main] ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+20210404 090935 [INFO ] [main] AppInfoParser - Kafka version: 2.4.1
+20210404 090935 [INFO ] [main] AppInfoParser - Kafka commitId: c57222ae8cd7866b
+20210404 090935 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1617507575501
+20210404 090935 [INFO ] [kafka-producer-network-thread | producer-3] Metadata - [Producer clientId=producer-3] Cluster ID: aymTMDi4RQGLSJUKlHhwzg
+20210404 090935 [INFO ] [main] KafkaProducer - [Producer clientId=producer-3] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+20210404 090935 [INFO ] [main] weatherapidata$ - City:Kolkata - API Polling completed
+20210404 090935 [INFO ] [main] weatherapidata$ - City:Bangalore - API Polling started
+20210404 090935 [INFO ] [main] weatherapidata$ - APIurl - https://api.openweathermap.org/data/2.5/onecall?lat=12.9699&lon=77.598&exclude=minutely,hourly,daily,alerts&appid=7f9e75dbfba0b07fe2e4e79fc4457342&units=metrics
+20210404 090935 [INFO ] [main] weatherdataproducer -  Pull Api data and add to kafka topic
+20210404 090935 [INFO ] [main] ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+20210404 090935 [INFO ] [main] AppInfoParser - Kafka version: 2.4.1
+20210404 090935 [INFO ] [main] AppInfoParser - Kafka commitId: c57222ae8cd7866b
+20210404 090935 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1617507575637
+20210404 090935 [INFO ] [kafka-producer-network-thread | producer-4] Metadata - [Producer clientId=producer-4] Cluster ID: aymTMDi4RQGLSJUKlHhwzg
+20210404 090935 [INFO ] [main] KafkaProducer - [Producer clientId=producer-4] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+20210404 090935 [INFO ] [main] weatherapidata$ - City:Bangalore - API Polling completed
+20210404 090935 [INFO ] [main] weatherapidata$ - City:Chennai - API Polling started
+20210404 090935 [INFO ] [main] weatherapidata$ - APIurl - https://api.openweathermap.org/data/2.5/onecall?lat=13.0825&lon=80.275&exclude=minutely,hourly,daily,alerts&appid=7f9e75dbfba0b07fe2e4e79fc4457342&units=metrics
+20210404 090935 [INFO ] [main] weatherdataproducer -  Pull Api data and add to kafka topic
+20210404 090935 [INFO ] [main] ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+20210404 090935 [INFO ] [main] AppInfoParser - Kafka version: 2.4.1
+20210404 090935 [INFO ] [main] AppInfoParser - Kafka commitId: c57222ae8cd7866b
+20210404 090935 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1617507575772
+20210404 090935 [INFO ] [kafka-producer-network-thread | producer-5] Metadata - [Producer clientId=producer-5] Cluster ID: aymTMDi4RQGLSJUKlHhwzg
+20210404 090935 [INFO ] [main] KafkaProducer - [Producer clientId=producer-5] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+20210404 090935 [INFO ] [main] weatherapidata$ - City:Chennai - API Polling completed
+20210404 090935 [INFO ] [main] weatherapidata$ - City:Hyderabad - API Polling started
+20210404 090935 [INFO ] [main] weatherapidata$ - APIurl - https://api.openweathermap.org/data/2.5/onecall?lat=17.3667&lon=78.4667&exclude=minutely,hourly,daily,alerts&appid=7f9e75dbfba0b07fe2e4e79fc4457342&units=metrics
+20210404 090935 [INFO ] [main] weatherdataproducer -  Pull Api data and add to kafka topic
+20210404 090935 [INFO ] [main] ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+20210404 090935 [INFO ] [main] AppInfoParser - Kafka version: 2.4.1
+20210404 090935 [INFO ] [main] AppInfoParser - Kafka commitId: c57222ae8cd7866b
+20210404 090935 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1617507575892
+20210404 090935 [INFO ] [kafka-producer-network-thread | producer-6] Metadata - [Producer clientId=producer-6] Cluster ID: aymTMDi4RQGLSJUKlHhwzg
+20210404 090935 [INFO ] [main] KafkaProducer - [Producer clientId=producer-6] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+20210404 090936 [INFO ] [main] weatherapidata$ - City:Hyderabad - API Polling completed
+20210404 090936 [INFO ] [main] weatherapidata$ - City:Pune - API Polling started
+20210404 090936 [INFO ] [main] weatherapidata$ - APIurl - https://api.openweathermap.org/data/2.5/onecall?lat=18.5196&lon=73.8553&exclude=minutely,hourly,daily,alerts&appid=7f9e75dbfba0b07fe2e4e79fc4457342&units=metrics
+20210404 090936 [INFO ] [main] weatherdataproducer -  Pull Api data and add to kafka topic
+20210404 090936 [INFO ] [main] ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+20210404 090936 [INFO ] [main] AppInfoParser - Kafka version: 2.4.1
+20210404 090936 [INFO ] [main] AppInfoParser - Kafka commitId: c57222ae8cd7866b
+20210404 090936 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1617507576014
+20210404 090936 [INFO ] [kafka-producer-network-thread | producer-7] Metadata - [Producer clientId=producer-7] Cluster ID: aymTMDi4RQGLSJUKlHhwzg
+20210404 090936 [INFO ] [main] KafkaProducer - [Producer clientId=producer-7] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+20210404 090936 [INFO ] [main] weatherapidata$ - City:Pune - API Polling completed
+20210404 090936 [INFO ] [main] weatherapidata$ - City:Ahmadabad - API Polling started
+20210404 090936 [INFO ] [main] weatherapidata$ - APIurl - https://api.openweathermap.org/data/2.5/onecall?lat=23.03&lon=72.58&exclude=minutely,hourly,daily,alerts&appid=7f9e75dbfba0b07fe2e4e79fc4457342&units=metrics
+20210404 090936 [INFO ] [main] weatherdataproducer -  Pull Api data and add to kafka topic
+20210404 090936 [INFO ] [main] ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+20210404 090936 [INFO ] [main] AppInfoParser - Kafka version: 2.4.1
+20210404 090936 [INFO ] [main] AppInfoParser - Kafka commitId: c57222ae8cd7866b
+20210404 090936 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1617507576131
+20210404 090936 [INFO ] [kafka-producer-network-thread | producer-8] Metadata - [Producer clientId=producer-8] Cluster ID: aymTMDi4RQGLSJUKlHhwzg
+20210404 090936 [INFO ] [main] KafkaProducer - [Producer clientId=producer-8] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+20210404 090936 [INFO ] [main] weatherapidata$ - City:Ahmadabad - API Polling completed
+20210404 090936 [INFO ] [main] weatherapidata$ - Sleep for 60000 ms
+20210404 091134 [INFO ] [main] weatherapidata$ - Read and initialize all properties
+20210404 091134 [INFO ] [main] weatherapidata$ - Variable Name:logger - value:org.apache.logging.slf4j.Log4jLogger@1e683a3e
+20210404 091134 [INFO ] [main] weatherapidata$ - Variable Name:URL - value:https://api.openweathermap.org/data/2.5/onecall
+20210404 091134 [INFO ] [main] weatherapidata$ - Variable Name:exclude - value:minutely,hourly,daily,alerts
+20210404 091134 [INFO ] [main] weatherapidata$ - Variable Name:appid - value:
+20210404 091134 [INFO ] [main] weatherapidata$ - Variable Name:unit - value:metrics
+20210404 091134 [INFO ] [main] weatherapidata$ - Variable Name:dataList - value:List(lat, lon, timezone, dt, sunrise, sunset, temp, humidity, dew_point, visibility, wind_speed)
+20210404 091134 [INFO ] [main] weatherapidata$ - Variable Name:timeMS - value:60000
+20210404 091134 [INFO ] [main] weatherapidata$ - Variable Name:server - value:localhost
+20210404 091134 [INFO ] [main] weatherapidata$ - Variable Name:port - value:9092
+20210404 091134 [INFO ] [main] weatherapidata$ - Variable Name:zookeeperPort - value:2181
+20210404 091134 [INFO ] [main] weatherapidata$ - Variable Name:topicName - value:WeatherData
+20210404 091134 [INFO ] [main] weatherapidata$ - Variable Name:Flag - value:true
+20210404 091134 [INFO ] [main] weatherapidata$ - Variable Name:CityListSource - value:<iterator>
+20210404 091134 [INFO ] [main] weatherdataproducer -  Initialize weatherdataproducer
+20210404 091134 [INFO ] [main] weatherapidata$ - City:Delhi - API Polling started
+20210404 091134 [INFO ] [main] weatherapidata$ - APIurl - https://api.openweathermap.org/data/2.5/onecall?lat=28.66&lon=77.23&exclude=minutely,hourly,daily,alerts&appid=&units=metrics
+20210404 091134 [INFO ] [main] weatherdataproducer -  Pull Api data and add to kafka topic
+20210404 091134 [INFO ] [main] ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+20210404 091134 [INFO ] [main] AppInfoParser - Kafka version: 2.4.1
+20210404 091134 [INFO ] [main] AppInfoParser - Kafka commitId: c57222ae8cd7866b
+20210404 091134 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1617507694413
+20210404 091134 [INFO ] [kafka-producer-network-thread | producer-1] Metadata - [Producer clientId=producer-1] Cluster ID: aymTMDi4RQGLSJUKlHhwzg
+20210404 091134 [ERROR] [main] weatherdataproducer - sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900)
+sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:268)
+java.net.URL.openStream(URL.java:1068)
+scala.io.Source$.fromURL(Source.scala:144)
+scala.io.Source$.fromURL(Source.scala:134)
+weather.data.produce.weatherdataproducer.getAPIData(weatherdataproducer.scala:23)
+weather.data.produce.weatherdataproducer.writeToKafka(weatherdataproducer.scala:81)
+weather.data.produce.weatherapidata.$anonfun$pollapidata$1(weatherapidata.scala:65)
+weather.data.produce.weatherapidata.$anonfun$pollapidata$1$adapted(weatherapidata.scala:60)
+scala.collection.immutable.Stream.foreach(Stream.scala:533)
+weather.data.produce.weatherapidata.pollapidata(weatherapidata.scala:60)
+weather.data.produce.weatherapidata$.delayedEndpoint$weather$data$produce$weatherapidata$1(weatherapidata.scala:95)
+weather.data.produce.weatherapidata$delayedInit$body.apply(weatherapidata.scala:79)
+scala.Function0.apply$mcV$sp(Function0.scala:39)
+scala.Function0.apply$mcV$sp$(Function0.scala:39)
+scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:17)
+scala.App.$anonfun$main$1$adapted(App.scala:80)
+scala.collection.immutable.List.foreach(List.scala:392)
+scala.App.main(App.scala:80)
+scala.App.main$(App.scala:78)
+weather.data.produce.weatherapidata$.main(weatherapidata.scala:79)
+weather.data.produce.weatherapidata.main(weatherapidata.scala)
+20210404 091134 [INFO ] [main] weatherapidata$ - City:Delhi - API Polling completed
+20210404 091134 [INFO ] [main] weatherapidata$ - City:Mumbai - API Polling started
+20210404 091134 [INFO ] [main] weatherapidata$ - APIurl - https://api.openweathermap.org/data/2.5/onecall?lat=18.9667&lon=72.8333&exclude=minutely,hourly,daily,alerts&appid=&units=metrics
+20210404 091134 [INFO ] [main] weatherdataproducer -  Pull Api data and add to kafka topic
+20210404 091134 [INFO ] [main] ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+20210404 091134 [INFO ] [main] AppInfoParser - Kafka version: 2.4.1
+20210404 091134 [INFO ] [main] AppInfoParser - Kafka commitId: c57222ae8cd7866b
+20210404 091134 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1617507694918
+20210404 091134 [INFO ] [kafka-producer-network-thread | producer-2] Metadata - [Producer clientId=producer-2] Cluster ID: aymTMDi4RQGLSJUKlHhwzg
+20210404 091135 [ERROR] [main] weatherdataproducer - sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900)
+sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:268)
+java.net.URL.openStream(URL.java:1068)
+scala.io.Source$.fromURL(Source.scala:144)
+scala.io.Source$.fromURL(Source.scala:134)
+weather.data.produce.weatherdataproducer.getAPIData(weatherdataproducer.scala:23)
+weather.data.produce.weatherdataproducer.writeToKafka(weatherdataproducer.scala:81)
+weather.data.produce.weatherapidata.$anonfun$pollapidata$1(weatherapidata.scala:65)
+weather.data.produce.weatherapidata.$anonfun$pollapidata$1$adapted(weatherapidata.scala:60)
+scala.collection.immutable.Stream.foreach(Stream.scala:533)
+weather.data.produce.weatherapidata.pollapidata(weatherapidata.scala:60)
+weather.data.produce.weatherapidata$.delayedEndpoint$weather$data$produce$weatherapidata$1(weatherapidata.scala:95)
+weather.data.produce.weatherapidata$delayedInit$body.apply(weatherapidata.scala:79)
+scala.Function0.apply$mcV$sp(Function0.scala:39)
+scala.Function0.apply$mcV$sp$(Function0.scala:39)
+scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:17)
+scala.App.$anonfun$main$1$adapted(App.scala:80)
+scala.collection.immutable.List.foreach(List.scala:392)
+scala.App.main(App.scala:80)
+scala.App.main$(App.scala:78)
+weather.data.produce.weatherapidata$.main(weatherapidata.scala:79)
+weather.data.produce.weatherapidata.main(weatherapidata.scala)
+20210404 091135 [INFO ] [main] weatherapidata$ - City:Mumbai - API Polling completed
+20210404 091135 [INFO ] [main] weatherapidata$ - City:Kolkata - API Polling started
+20210404 091135 [INFO ] [main] weatherapidata$ - APIurl - https://api.openweathermap.org/data/2.5/onecall?lat=22.5411&lon=88.3378&exclude=minutely,hourly,daily,alerts&appid=&units=metrics
+20210404 091135 [INFO ] [main] weatherdataproducer -  Pull Api data and add to kafka topic
+20210404 091135 [INFO ] [main] ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+20210404 091135 [INFO ] [main] AppInfoParser - Kafka version: 2.4.1
+20210404 091135 [INFO ] [main] AppInfoParser - Kafka commitId: c57222ae8cd7866b
+20210404 091135 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1617507695063
+20210404 091135 [INFO ] [kafka-producer-network-thread | producer-3] Metadata - [Producer clientId=producer-3] Cluster ID: aymTMDi4RQGLSJUKlHhwzg
+20210404 091135 [ERROR] [main] weatherdataproducer - sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900)
+sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:268)
+java.net.URL.openStream(URL.java:1068)
+scala.io.Source$.fromURL(Source.scala:144)
+scala.io.Source$.fromURL(Source.scala:134)
+weather.data.produce.weatherdataproducer.getAPIData(weatherdataproducer.scala:23)
+weather.data.produce.weatherdataproducer.writeToKafka(weatherdataproducer.scala:81)
+weather.data.produce.weatherapidata.$anonfun$pollapidata$1(weatherapidata.scala:65)
+weather.data.produce.weatherapidata.$anonfun$pollapidata$1$adapted(weatherapidata.scala:60)
+scala.collection.immutable.Stream.foreach(Stream.scala:533)
+weather.data.produce.weatherapidata.pollapidata(weatherapidata.scala:60)
+weather.data.produce.weatherapidata$.delayedEndpoint$weather$data$produce$weatherapidata$1(weatherapidata.scala:95)
+weather.data.produce.weatherapidata$delayedInit$body.apply(weatherapidata.scala:79)
+scala.Function0.apply$mcV$sp(Function0.scala:39)
+scala.Function0.apply$mcV$sp$(Function0.scala:39)
+scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:17)
+scala.App.$anonfun$main$1$adapted(App.scala:80)
+scala.collection.immutable.List.foreach(List.scala:392)
+scala.App.main(App.scala:80)
+scala.App.main$(App.scala:78)
+weather.data.produce.weatherapidata$.main(weatherapidata.scala:79)
+weather.data.produce.weatherapidata.main(weatherapidata.scala)
+20210404 091135 [INFO ] [main] weatherapidata$ - City:Kolkata - API Polling completed
+20210404 091135 [INFO ] [main] weatherapidata$ - City:Bangalore - API Polling started
+20210404 091135 [INFO ] [main] weatherapidata$ - APIurl - https://api.openweathermap.org/data/2.5/onecall?lat=12.9699&lon=77.598&exclude=minutely,hourly,daily,alerts&appid=&units=metrics
+20210404 091135 [INFO ] [main] weatherdataproducer -  Pull Api data and add to kafka topic
+20210404 091135 [INFO ] [main] ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+20210404 091135 [INFO ] [main] AppInfoParser - Kafka version: 2.4.1
+20210404 091135 [INFO ] [main] AppInfoParser - Kafka commitId: c57222ae8cd7866b
+20210404 091135 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1617507695213
+20210404 091135 [INFO ] [kafka-producer-network-thread | producer-4] Metadata - [Producer clientId=producer-4] Cluster ID: aymTMDi4RQGLSJUKlHhwzg
+20210404 091135 [ERROR] [main] weatherdataproducer - sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900)
+sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:268)
+java.net.URL.openStream(URL.java:1068)
+scala.io.Source$.fromURL(Source.scala:144)
+scala.io.Source$.fromURL(Source.scala:134)
+weather.data.produce.weatherdataproducer.getAPIData(weatherdataproducer.scala:23)
+weather.data.produce.weatherdataproducer.writeToKafka(weatherdataproducer.scala:81)
+weather.data.produce.weatherapidata.$anonfun$pollapidata$1(weatherapidata.scala:65)
+weather.data.produce.weatherapidata.$anonfun$pollapidata$1$adapted(weatherapidata.scala:60)
+scala.collection.immutable.Stream.foreach(Stream.scala:533)
+weather.data.produce.weatherapidata.pollapidata(weatherapidata.scala:60)
+weather.data.produce.weatherapidata$.delayedEndpoint$weather$data$produce$weatherapidata$1(weatherapidata.scala:95)
+weather.data.produce.weatherapidata$delayedInit$body.apply(weatherapidata.scala:79)
+scala.Function0.apply$mcV$sp(Function0.scala:39)
+scala.Function0.apply$mcV$sp$(Function0.scala:39)
+scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:17)
+scala.App.$anonfun$main$1$adapted(App.scala:80)
+scala.collection.immutable.List.foreach(List.scala:392)
+scala.App.main(App.scala:80)
+scala.App.main$(App.scala:78)
+weather.data.produce.weatherapidata$.main(weatherapidata.scala:79)
+weather.data.produce.weatherapidata.main(weatherapidata.scala)
+20210404 091135 [INFO ] [main] weatherapidata$ - City:Bangalore - API Polling completed
+20210404 091135 [INFO ] [main] weatherapidata$ - City:Chennai - API Polling started
+20210404 091135 [INFO ] [main] weatherapidata$ - APIurl - https://api.openweathermap.org/data/2.5/onecall?lat=13.0825&lon=80.275&exclude=minutely,hourly,daily,alerts&appid=&units=metrics
+20210404 091135 [INFO ] [main] weatherdataproducer -  Pull Api data and add to kafka topic
+20210404 091135 [INFO ] [main] ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+20210404 091135 [INFO ] [main] AppInfoParser - Kafka version: 2.4.1
+20210404 091135 [INFO ] [main] AppInfoParser - Kafka commitId: c57222ae8cd7866b
+20210404 091135 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1617507695363
+20210404 091135 [INFO ] [kafka-producer-network-thread | producer-5] Metadata - [Producer clientId=producer-5] Cluster ID: aymTMDi4RQGLSJUKlHhwzg
+20210404 091135 [ERROR] [main] weatherdataproducer - sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900)
+sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:268)
+java.net.URL.openStream(URL.java:1068)
+scala.io.Source$.fromURL(Source.scala:144)
+scala.io.Source$.fromURL(Source.scala:134)
+weather.data.produce.weatherdataproducer.getAPIData(weatherdataproducer.scala:23)
+weather.data.produce.weatherdataproducer.writeToKafka(weatherdataproducer.scala:81)
+weather.data.produce.weatherapidata.$anonfun$pollapidata$1(weatherapidata.scala:65)
+weather.data.produce.weatherapidata.$anonfun$pollapidata$1$adapted(weatherapidata.scala:60)
+scala.collection.immutable.Stream.foreach(Stream.scala:533)
+weather.data.produce.weatherapidata.pollapidata(weatherapidata.scala:60)
+weather.data.produce.weatherapidata$.delayedEndpoint$weather$data$produce$weatherapidata$1(weatherapidata.scala:95)
+weather.data.produce.weatherapidata$delayedInit$body.apply(weatherapidata.scala:79)
+scala.Function0.apply$mcV$sp(Function0.scala:39)
+scala.Function0.apply$mcV$sp$(Function0.scala:39)
+scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:17)
+scala.App.$anonfun$main$1$adapted(App.scala:80)
+scala.collection.immutable.List.foreach(List.scala:392)
+scala.App.main(App.scala:80)
+scala.App.main$(App.scala:78)
+weather.data.produce.weatherapidata$.main(weatherapidata.scala:79)
+weather.data.produce.weatherapidata.main(weatherapidata.scala)
+20210404 091135 [INFO ] [main] weatherapidata$ - City:Chennai - API Polling completed
+20210404 091135 [INFO ] [main] weatherapidata$ - City:Hyderabad - API Polling started
+20210404 091135 [INFO ] [main] weatherapidata$ - APIurl - https://api.openweathermap.org/data/2.5/onecall?lat=17.3667&lon=78.4667&exclude=minutely,hourly,daily,alerts&appid=&units=metrics
+20210404 091135 [INFO ] [main] weatherdataproducer -  Pull Api data and add to kafka topic
+20210404 091135 [INFO ] [main] ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+20210404 091135 [INFO ] [main] AppInfoParser - Kafka version: 2.4.1
+20210404 091135 [INFO ] [main] AppInfoParser - Kafka commitId: c57222ae8cd7866b
+20210404 091135 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1617507695493
+20210404 091135 [INFO ] [kafka-producer-network-thread | producer-6] Metadata - [Producer clientId=producer-6] Cluster ID: aymTMDi4RQGLSJUKlHhwzg
+20210404 091135 [ERROR] [main] weatherdataproducer - sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900)
+sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:268)
+java.net.URL.openStream(URL.java:1068)
+scala.io.Source$.fromURL(Source.scala:144)
+scala.io.Source$.fromURL(Source.scala:134)
+weather.data.produce.weatherdataproducer.getAPIData(weatherdataproducer.scala:23)
+weather.data.produce.weatherdataproducer.writeToKafka(weatherdataproducer.scala:81)
+weather.data.produce.weatherapidata.$anonfun$pollapidata$1(weatherapidata.scala:65)
+weather.data.produce.weatherapidata.$anonfun$pollapidata$1$adapted(weatherapidata.scala:60)
+scala.collection.immutable.Stream.foreach(Stream.scala:533)
+weather.data.produce.weatherapidata.pollapidata(weatherapidata.scala:60)
+weather.data.produce.weatherapidata$.delayedEndpoint$weather$data$produce$weatherapidata$1(weatherapidata.scala:95)
+weather.data.produce.weatherapidata$delayedInit$body.apply(weatherapidata.scala:79)
+scala.Function0.apply$mcV$sp(Function0.scala:39)
+scala.Function0.apply$mcV$sp$(Function0.scala:39)
+scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:17)
+scala.App.$anonfun$main$1$adapted(App.scala:80)
+scala.collection.immutable.List.foreach(List.scala:392)
+scala.App.main(App.scala:80)
+scala.App.main$(App.scala:78)
+weather.data.produce.weatherapidata$.main(weatherapidata.scala:79)
+weather.data.produce.weatherapidata.main(weatherapidata.scala)
+20210404 091135 [INFO ] [main] weatherapidata$ - City:Hyderabad - API Polling completed
+20210404 091135 [INFO ] [main] weatherapidata$ - City:Pune - API Polling started
+20210404 091135 [INFO ] [main] weatherapidata$ - APIurl - https://api.openweathermap.org/data/2.5/onecall?lat=18.5196&lon=73.8553&exclude=minutely,hourly,daily,alerts&appid=&units=metrics
+20210404 091135 [INFO ] [main] weatherdataproducer -  Pull Api data and add to kafka topic
+20210404 091135 [INFO ] [main] ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+20210404 091135 [INFO ] [main] AppInfoParser - Kafka version: 2.4.1
+20210404 091135 [INFO ] [main] AppInfoParser - Kafka commitId: c57222ae8cd7866b
+20210404 091135 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1617507695645
+20210404 091135 [INFO ] [kafka-producer-network-thread | producer-7] Metadata - [Producer clientId=producer-7] Cluster ID: aymTMDi4RQGLSJUKlHhwzg
+20210404 091135 [ERROR] [main] weatherdataproducer - sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900)
+sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:268)
+java.net.URL.openStream(URL.java:1068)
+scala.io.Source$.fromURL(Source.scala:144)
+scala.io.Source$.fromURL(Source.scala:134)
+weather.data.produce.weatherdataproducer.getAPIData(weatherdataproducer.scala:23)
+weather.data.produce.weatherdataproducer.writeToKafka(weatherdataproducer.scala:81)
+weather.data.produce.weatherapidata.$anonfun$pollapidata$1(weatherapidata.scala:65)
+weather.data.produce.weatherapidata.$anonfun$pollapidata$1$adapted(weatherapidata.scala:60)
+scala.collection.immutable.Stream.foreach(Stream.scala:533)
+weather.data.produce.weatherapidata.pollapidata(weatherapidata.scala:60)
+weather.data.produce.weatherapidata$.delayedEndpoint$weather$data$produce$weatherapidata$1(weatherapidata.scala:95)
+weather.data.produce.weatherapidata$delayedInit$body.apply(weatherapidata.scala:79)
+scala.Function0.apply$mcV$sp(Function0.scala:39)
+scala.Function0.apply$mcV$sp$(Function0.scala:39)
+scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:17)
+scala.App.$anonfun$main$1$adapted(App.scala:80)
+scala.collection.immutable.List.foreach(List.scala:392)
+scala.App.main(App.scala:80)
+scala.App.main$(App.scala:78)
+weather.data.produce.weatherapidata$.main(weatherapidata.scala:79)
+weather.data.produce.weatherapidata.main(weatherapidata.scala)
+20210404 091135 [INFO ] [main] weatherapidata$ - City:Pune - API Polling completed
+20210404 091135 [INFO ] [main] weatherapidata$ - City:Ahmadabad - API Polling started
+20210404 091135 [INFO ] [main] weatherapidata$ - APIurl - https://api.openweathermap.org/data/2.5/onecall?lat=23.03&lon=72.58&exclude=minutely,hourly,daily,alerts&appid=&units=metrics
+20210404 091135 [INFO ] [main] weatherdataproducer -  Pull Api data and add to kafka topic
+20210404 091135 [INFO ] [main] ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+20210404 091135 [INFO ] [main] AppInfoParser - Kafka version: 2.4.1
+20210404 091135 [INFO ] [main] AppInfoParser - Kafka commitId: c57222ae8cd7866b
+20210404 091135 [INFO ] [main] AppInfoParser - Kafka startTimeMs: 1617507695786
+20210404 091135 [INFO ] [kafka-producer-network-thread | producer-8] Metadata - [Producer clientId=producer-8] Cluster ID: aymTMDi4RQGLSJUKlHhwzg
+20210404 091135 [ERROR] [main] weatherdataproducer - sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900)
+sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:268)
+java.net.URL.openStream(URL.java:1068)
+scala.io.Source$.fromURL(Source.scala:144)
+scala.io.Source$.fromURL(Source.scala:134)
+weather.data.produce.weatherdataproducer.getAPIData(weatherdataproducer.scala:23)
+weather.data.produce.weatherdataproducer.writeToKafka(weatherdataproducer.scala:81)
+weather.data.produce.weatherapidata.$anonfun$pollapidata$1(weatherapidata.scala:65)
+weather.data.produce.weatherapidata.$anonfun$pollapidata$1$adapted(weatherapidata.scala:60)
+scala.collection.immutable.Stream.foreach(Stream.scala:533)
+weather.data.produce.weatherapidata.pollapidata(weatherapidata.scala:60)
+weather.data.produce.weatherapidata$.delayedEndpoint$weather$data$produce$weatherapidata$1(weatherapidata.scala:95)
+weather.data.produce.weatherapidata$delayedInit$body.apply(weatherapidata.scala:79)
+scala.Function0.apply$mcV$sp(Function0.scala:39)
+scala.Function0.apply$mcV$sp$(Function0.scala:39)
+scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:17)
+scala.App.$anonfun$main$1$adapted(App.scala:80)
+scala.collection.immutable.List.foreach(List.scala:392)
+scala.App.main(App.scala:80)
+scala.App.main$(App.scala:78)
+weather.data.produce.weatherapidata$.main(weatherapidata.scala:79)
+weather.data.produce.weatherapidata.main(weatherapidata.scala)
+20210404 091135 [INFO ] [main] weatherapidata$ - City:Ahmadabad - API Polling completed
+20210404 091135 [INFO ] [main] weatherapidata$ - Sleep for 60000 ms

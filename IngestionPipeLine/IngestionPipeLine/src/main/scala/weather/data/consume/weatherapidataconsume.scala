@@ -7,7 +7,7 @@ object weatherapidataconsume extends App {
 
   val consumeData: weatherdataprocessing = new weatherdataprocessing()
 
-  val spark = consumeData.createSparkSession("WeatherData", "spark://vivekdesai:7077")
+  val spark = consumeData.createSparkSession("WeatherData", "local[*]") //spark://vivekdesai:7077
   spark.sparkContext.setLogLevel("ERROR")
   var frame: DataFrame = consumeData.readStramDataFromkafka(spark, "kafka",
     "localhost", 9092, "WeatherData")
