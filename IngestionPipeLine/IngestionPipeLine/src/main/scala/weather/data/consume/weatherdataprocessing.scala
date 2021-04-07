@@ -53,7 +53,7 @@ class weatherdataprocessing {
       .withColumn("sunrise", from_unixtime(col("sunrise").as("sunrise")))
       .withColumn("sunset", from_unixtime(col("sunset").as("sunset")))
       .withColumnRenamed("dt","datetime")
-      .withColumn("partationdate", col("datetime").substr(0, 10))
+      .withColumn("partitiondate", col("datetime").substr(0, 10))
   }
   def writeStreamDataToConsole(frame: DataFrame): StreamingQuery = {
 
@@ -68,7 +68,7 @@ class weatherdataprocessing {
       .format("parquet")
       .option("checkpointLocation", "D:\\CheckPointWeatherData")
       .option("path", "D:\\OutputWeatherData")
-      .partitionBy("partationdate")
+      .partitionBy("partitiondate")
       .outputMode("append")
       .start()
   }
